@@ -1,6 +1,8 @@
-const sliders = document.querySelectorAll('.slide');
+const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in');
+
 let options = {
-    threshold : 1,
+    threshold : 0.3,
     rootMargin : "0px 0px -100px 0px"
 };
 
@@ -18,6 +20,10 @@ if(!entry.isIntersecting){
 
 });
 }
+
+faders.forEach(fader =>{
+    appearOnScroll.observe(fader);
+})
 
 sliders.forEach(slide => {
     appearOnScroll.observe(slide);

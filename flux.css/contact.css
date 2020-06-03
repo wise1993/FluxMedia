@@ -143,7 +143,7 @@ textarea{
 @media screen and (max-width:768px){
    
     #submit{
-        width: 200px;
+        width: 150px;
         margin-right: 10px;
     }
   .contact-form{

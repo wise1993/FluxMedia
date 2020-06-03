@@ -186,53 +186,48 @@ footer{
     min-height: 100%;
     position: relative;
 }
-/*
-.slide{
+.slide-left{
+    transform: translate(-50%);
+}
+.slide-right{
+    transform: translate(50%);
+}
+
+.slide-left, .slide-right {
+    opacity: 0;
+    transition: opacity 250ms ease-in, transform 600ms ease-in;
+}
+.slide-left.appear, .slide-right.appear{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-in{
     opacity: 0;
     transition: opacity 250ms ease-in;
 }
-.slide.appear{
+.fade-in.appear{
     opacity: 1;
 }
-*/
 
 
-
-
-
-
-/*
-.content-1{
-display: block;
-animation-name: slideIn;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-animation-iteration-count:initial;
-animation-timing-function: ease-in;
-animation-direction: normal;
-}
-@keyframes slideIn{
-    from{
-        left: -100%; transform: translateX(-100px);
-    }
-    to{
-        left: 0%; transform: translateX(100px);
-    }
-}
-*/
 @media screen and (max-width:768px){
-        .video-container{
-            background-image: url(../Img/group-2.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            width: 600px;
-            height: 500px;
-        }
+        
+    .video-container{
+        background-image: url(../Img/group-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        padding: 0px auto;
+        position: relative;
+        overflow: hidden;
+    
+    }
     .transparent-tab, img{
         height: 400px;
-        width: 400px;
+        width: 300px;
     }
 .last-link{
     display: block;
@@ -244,10 +239,20 @@ animation-direction: normal;
 .font-awesome{
     margin-right: 30px;
 }
+.first-overlay{
+    color: rgba(218, 165, 32, 0.884);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex: 1;
+   margin-left: 10px;
+}
 }
 
 @media only screen and (min-width:768px){
 .social-media, img{
     margin-left: 40px;
 }
+
 }

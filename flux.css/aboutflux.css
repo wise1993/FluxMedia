@@ -4,8 +4,9 @@ body{
 }
 p{font-size: 20px;}
 #first-pic{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.651), rgba(255, 255, 255, 0.514)), url(../img/group-1.jpg);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.651), rgba(255, 255, 255, 0.514)), url(../img/pic6.jpeg);
+background-attachment: fixed;
+background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 450px; 
